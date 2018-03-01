@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Aigerim Mukhamejanova](https://up.htmlacademy.ru/htmlcss/20/user/665007).
+* Студент: [Aigerim Mukhamejanova](https://htmlacademy.ru/profile/id665007).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
