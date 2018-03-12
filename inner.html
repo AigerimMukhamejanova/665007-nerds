@@ -17,7 +17,8 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><a href="order.html">Корзина</a></li>
+                <li class="login-link">
+                <a class="login-link" href="login.html">Корзина</a></li>
             </ul>
         </nav>
         <b>Магазин готовых шаблонов</b>
@@ -26,8 +27,63 @@
         <h1 class="visually-hidden">Готовые шаблоны</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
-            <!-- Здесь будет форма -->
-        </section>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+               <legend>Стоимость:</legend>
+            <label>
+            <input type="range" name="radio"></label>
+            <p>
+            <label for="from">От</label>
+            <input id="from" type="text" name="price-range" placeholder="0">
+            <label for="to">До</label>
+            <input id="to" type="text" name="price-range" placeholder="15000">
+            </p>
+            </fieldset>
+            <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+                <li class="filter-option">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                    <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                    <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                    <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                    <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option">
+                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="order" id="filter-order">
+                    <label for="filter-order">Корзина</label>
+                </li>
+            </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+        </form>
+    </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
             <p>Сортировать:</p>
@@ -36,8 +92,8 @@
                 <li>По типу</li>
                 <li>По названию</li>
             </ul>
-            <a class="button" href="#">Вниз</a>
-            <a class="button" href="#">Вверх</a>
+            <button class="button button-down" type="button">Вниз</button>
+            <button class="button button-up" type="button">Вверх</button>
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <h3>
@@ -51,51 +107,51 @@
                 </li>
                 <li class="catalog-item">
                     <h3>
-                      <a href="catalog-item2.html">Информационный сайт мобильного приложения «Pink»</a>
+                      <a href="catalog-item2.html">Продуктовый лендинг приложения для iOS и Android «Pink App»</a>
                     </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item2.html">
-                        <img src="img/img-pink.jpg" alt="Информационный сайт мобильного приложения «Pink»">
+                        <img src="img/img-pink.jpg" alt="Продуктовый лендинг приложения для iOS и Android «Pink App»">
                         </a>
                     </p>
                 </li>
                 <li class="catalog-item">
                     <h3>
-                      <a href="catalog-item3.html">Информационный сайт барбершопа «Бородинский»</a>
+                      <a href="catalog-item3.html">Сайт салона красоты Barbershop «Бородинский»</a>
                     </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item3.html">
-                        <img src="img/img-barbershop.jpg" alt="Информационный сайт барбершопа «Бородинский»">
+                        <img src="img/img-barbershop.jpg" alt="Сайт салона красоты Barbershop «Бородинский»">
                         </a>
                     </p>
                 </li>
                 <li class="catalog-item">
                     <h3>
-                      <a href="catalog-item4.html">Информационный сайт онлайн-магазина «Mishka»</a>
+                      <a href="catalog-item4.html">Интернет-магазин вязаных игрушек «Mishka»</a>
                     </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item4.html">
-                        <img src="img/img-mishka.jpg" alt="Информационный сайт онлайн-магазина «Mishka»">
+                        <img src="img/img-mishka.jpg" alt="Интернет-магазин вязаных игрушек «Mishka»">
                         </a>
                     </p>
                 </li>
                 <li class="catalog-item">
                     <h3>
-                      <a href="catalog-item5.html">Информационный сайт онлайн-обучения «А+»</a>
+                      <a href="catalog-item5.html">Лендинг курсов повышения квалификации «А Plus»</a>
                     </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item5.html">
-                        <img src="img/img-aplus.jpg" alt="Информационный сайт онлайн-обучения «А+»">
+                        <img src="img/img-aplus.jpg" alt="Лендинг курсов повышения квалификации «А Plus»">
                         </a>
                     </p>
                 </li>
                 <li class="catalog-item">
                     <h3>
-                      <a href="catalog-item6.html">Информационный сайт кваса «Кваст»</a>
+                      <a href="catalog-item6.html">Промо-сайт производителя крафтового кваса «Кваст»</a>
                     </h3>
                     <p class="catalog-item-image">
                         <a href="catalog-item6.html">
-                        <img src="img/img-kvast.jpg" alt="Информационный сайт кваса «Кваст»">
+                        <img src="img/img-kvast.jpg" alt="Промо-сайт производителя крафтового кваса «Кваст»">
                         </a>
                     </p>
                 </li>
@@ -114,7 +170,7 @@
             <div class="footer-contacts"> <b>Nёrds design studio</b>
                 <p>191186, Санкт-Петербург,</p>
                 <p>ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p> <a class="button" href="#mail-service.html">Напишите нам</a> </div>
+                <p>тел. +7 (812) 275-75-75</p> <a class="button" href="mail-service">Напишите нам</a> </div>
         </section>
         <div class="footer-social">
             <ul>
@@ -125,6 +181,25 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+    <section class="modal modal-mail-service">
+      <h2>Напишите нам</h2>
+      <form class="mail-service-form" action="https://echo.htmlacademy.ru" method="post">
+       <p class="mail-service-item">
+         <label for="mail-service-name">Ваше имя:</label>
+          <input id="mail-service-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="mail-service-item">
+         <label for="e-mail-address">Ваш e-mail:</label> 
+          <input id="e-mail-address" type="text" name="e-mail" value=""placeholder="email@example.com">
+        </p> 
+        <p class="mail-service-item">
+         <label for="mail-text">Текст письма:</label>
+          <input id="mail-text" type="text" name="letter-text" value="" placeholder="В свободной форме">
+        </p> 
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 </body>
 
 </html>

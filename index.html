@@ -17,7 +17,8 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><a href="order.html">Корзина</a></li>
+                <li class="login-link">
+                <a class="login-link" href="login.html">Корзина</a></li>
             </ul>
         </nav>
         <section class="features">
@@ -105,7 +106,7 @@
             <p>191186, Санкт-Петербург,</p>
             <p>ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="button" href="#mail-service.html">Напишите нам</a>
+            <a class="button" href="mail-service">Напишите нам</a>
          </div>
         </section>
         <div class="footer-social">
@@ -117,6 +118,25 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+    <section class="modal modal-mail-service">
+      <h2>Напишите нам</h2>
+      <form class="mail-service-form" action="https://echo.htmlacademy.ru" method="post">
+       <p class="mail-service-item">
+         <label for="mail-service-name">Ваше имя:</label>
+          <input id="mail-service-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="mail-service-item">
+         <label for="e-mail-address">Ваш e-mail:</label> 
+          <input id="e-mail-address" type="text" name="e-mail" value=""placeholder="email@example.com">
+        </p> 
+        <p class="mail-service-item">
+         <label for="mail-text">Текст письма:</label>
+          <input id="mail-text" type="text" name="letter-text" value="" placeholder="В свободной форме">
+        </p> 
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 </body>
 
 </html>
