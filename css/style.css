@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  }
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+    color: #a6a6a6;
+}
+
+li.slider-item {
+  list-style: none;
+}
+
+li.slider-item b {
+  font-size: 55px;
+  line-height: 55px;  
+}
+
+li.slider-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #fb565a;
+    background-color: #fb565a; 
+    padding: 10px 45px;
+}
+
+li.slider-item a:hover {
+    background-color: #e74246;
+}
+li.slider-item a:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
+.service-item {
+  text-align: left;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;  
+}
+
+.service-item a {
+  text-decoration: none;
+}
+
+li.service-item {
+  list-style: none;
+}
+
+li.service-item a.button-red {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #fb565a;
+    background-color: #fb565a; 
+    padding: 10px 45px;
+}
+
+li.service-item a.button-red:hover {
+    background-color: #e74246;
+}
+li.service-item a.button-red:focus {
+    background-color: #d7373b;
+    color: #e37376;
+}
+
+li.service-item a.button-green {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #00ca74;
+    background-color: #00ca74; 
+    padding: 10px 45px;
+}
+
+li.service-item a.button-green:hover {
+    background-color: #00bc6c;
+}
+li.service-item a.button-green:focus {
+    background-color: #00aa62;
+    color: #4dc491;
+}
+
+li.service-item a.button-yellow {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #efc84a;
+    background-color: #efc84a; 
+    padding: 10px 45px;
+}
+
+li.service-item a.button-yellow:hover {
+    background-color: #eab534;
+}
+li.service-item a.button-yellow:focus {
+    background-color: #e5a722;
+    color: #edc265;
+}
+
+.studio b {
+  font-size: 45px;
+  line-height: 45px;  
+}
+
+strong.studio-service {
+    text-transform: uppercase;
+}
+ul.studio-service li {
+   list-style: none;
+}
+
+table {
+    width: 360px;
+    height: 208px;
+    /*border: 1px solid black;
+    padding: 10px;*/
+    
+}
+caption {
+    text-transform: uppercase;
+}
+  
+.row-1 {
+    font-size: 45px;
+  line-height: 10,06px;
+}
+
+.row-1 td {
+    vertical-align: bottom;
+}
+
+.row-2 {
+  line-height: 18px;
+}
+
+.client-logo li {
+    list-style: none;
+}
+
+.footer-contacts b {
+   text-transform: uppercase;
+    font-size: 18px;
+  line-height: 30px;
+}
+
+.footer-contacts .button {
+    font-size: inherit;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #fb565a;
+    background-color: #fb565a; 
+    padding: 15px 45px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+.social-button {
+  color: #000000;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-social p {
+   line-height: 22px;
+}
+
+.modal-mail-service h2 {
+    font-size: 45px;
+  line-height: 45px;
+}
+
+.mail-service-form label {
+    line-height: 18px;
+}
+
+.mail-service-item input, textarea {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #cccccc;
+}
+
+.mail-service-item input:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.mail-service-item input:focus {
+    border: 2px solid #000000;
+}
+
+.mail-service-item textarea:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.mail-service-item textarea:focus {
+    border: 2px solid #000000;
+}
+
+.mail-service-form .button {
+    font-size: inherit;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #fb565a;
+    background-color: #fb565a; 
+    padding: 15px 45px;
+}
+
+.main-header b {
+    font-size: 55px;
+  line-height: 55px;
+}
+
+.filter button {
+    font-size: inherit;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  border: 1px solid #eeeeee;
+    background-color: #eeeeee; 
+    padding: 15px 45px;
+}
+
+.filter button:hover {
+    color: #000000;
+    border: 1px solid #dfdfdf;
+    background-color: #dfdfdf;
+}
+
+.filter button:focus {
+    color: #959595;
+    border: 1px solid #d5d5d5;
+    background-color: #d5d5d5;
+}
+
+.filter legend {
+    text-transform: uppercase;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.filter-option label {
+  font-size: inherit;
+  line-height: 20px;
+}
+
+.catalog p.sorting {
+    text-transform: uppercase;
+}
+
+.catalog ul {
+    list-style: none;
+}
+
+.parameter a {
+    text-transform: uppercase;
+    color: #cacaca;
+    
+}
+
+.parameter a:hover {
+    color: #8d8d8d;
+}
+
+.parameter a:focus {
+    color: #000000;
+}
+
+.pagination-list a {
+    font-size: inherit;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.pagination-item a {
+    border: 1px solid #eeeeee;
+    background-color: #eeeeee;
+    padding: 5px 5px;
+}
+
+.pagination-item a:hover {
+    border: 1px solid #dfdfdf;
+    background-color: #dfdfdf;
+    padding: 5px 5px;
+}
+
+.pagination-item a:focus {
+    color: #959595;
+    border: 1px solid #d5d5d5;
+    background-color: #d5d5d5;
+    padding: 5px 5px;
+}
+
+.catalog-item-hover b {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.catalog-item-hover p {
+    font-size: inherit;
+    line-height: 18px;
+}
+
+.catalog-item-hover a {
+    font-size: inherit;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #fb565a;
+    background-color: #fb565a; 
+    padding: 15px 45px;
+}

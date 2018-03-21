@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Нердс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +35,12 @@
                <legend>Стоимость:</legend>
             <label>
             <input type="range" name="radio"></label>
+            <!--<div class="skroll">
+  <button class="skroll_left"></button>
+  <button class="skroll_right"></button>
+  <div class="skroll_field"></div>
+</div>-->
+            
             <p>
             <label for="from">От</label>
             <input id="from" type="text" name="price-range" placeholder="0">
@@ -86,11 +95,17 @@
     </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
-            <p>Сортировать:</p>
-            <ul>
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По названию</li>
+            <p class="sorting">Сортировать:</p>
+            <ul class="parameter">
+                <li>
+                    <a href="#">По цене</a>
+                </li>
+                <li>
+                    <a href="#">По типу</a>
+                </li>
+                <li>
+                    <a href="#">По названию</a>
+                </li>
             </ul>
             <button class="button button-down" type="button">Вниз</button>
             <button class="button button-up" type="button">Вверх</button>
@@ -157,7 +172,7 @@
                 </li>
             </ul>
             <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item <!--pagination-item-current-->"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -200,6 +215,39 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <section class="catalog-item-hover">
+        <div class="Sedona-Hover">
+            <b>Sedona</b>
+            <p>Информационный сайт для туристов</p>
+            <a href="#">9900 руб.</a>
+        </div>
+        <div class="Pink-Hover">
+            <b>Pink App</b>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#">9900 руб.</a>
+        </div>
+        <div class="Barbershop-Hover">
+            <b>Barbershop</b>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#">9900 руб.</a>
+        </div>
+        <div class="Mishka-Hover">
+            <b>Mishka</b>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="#">9900 руб.</a>
+        </div>
+        <div class="A-Plus-Hover">
+            <b>А Plus</b>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a href="#">9900 руб.</a>
+        </div>
+        <div class="Kvast-Hover">
+            <b>Кваст</b>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="#">9900 руб.</a>
+        </div>
+    </section>
+    
 </body>
 
 </html>
