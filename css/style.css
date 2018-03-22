@@ -53,7 +53,10 @@ li.slider-item a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+    display: block;
+    width: 240px;
   text-transform: uppercase;
+    text-align: center;
   border: 1px solid #fb565a;
     background-color: #fb565a; 
     padding: 10px 45px;
@@ -90,9 +93,12 @@ li.service-item a.button-red {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-  border: 1px solid #fb565a;
+    text-align: center;
+    display: block;
+    width: 160px;
+    border: 1px solid #fb565a;
     background-color: #fb565a; 
-    padding: 10px 45px;
+    padding: 20px 40px;
 }
 
 li.service-item a.button-red:hover {
@@ -108,9 +114,12 @@ li.service-item a.button-green {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 160px;
   border: 1px solid #00ca74;
     background-color: #00ca74; 
-    padding: 10px 45px;
+    padding: 20px 40px;
 }
 
 li.service-item a.button-green:hover {
@@ -126,9 +135,12 @@ li.service-item a.button-yellow {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 160px;
   border: 1px solid #efc84a;
     background-color: #efc84a; 
-    padding: 10px 45px;
+    padding: 20px 40px;
 }
 
 li.service-item a.button-yellow:hover {
@@ -190,6 +202,9 @@ caption {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 219px;
   border: 1px solid #fb565a;
     background-color: #fb565a; 
     padding: 15px 45px;
@@ -252,6 +267,9 @@ caption {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 260px;
   border: 1px solid #fb565a;
     background-color: #fb565a; 
     padding: 15px 45px;
@@ -286,6 +304,9 @@ opacity: 0.5;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 260px;
   border: 1px solid #eeeeee;
     background-color: #eeeeee; 
     padding: 15px 45px;
@@ -386,7 +407,11 @@ opacity: 0.5;
     line-height: 18px;
     color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 200px;
     border: 1px solid #fb565a;
     background-color: #fb565a; 
     padding: 15px 45px;
+    
 }
