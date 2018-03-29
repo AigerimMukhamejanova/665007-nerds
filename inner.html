@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Нердс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -41,13 +41,13 @@
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <div class="filter-price">
                <legend class="price">Стоимость:</legend>
-                <div class="skroll">
+                <!--<div class="skroll">
                     <button class="skroll_left"></button>
                     <button class="skroll_right"></button>
                     <div class="skroll_field"></div>
-                </div>
+                </div>-->
             
-                <p>
+                <p class="price-range">
                 <label for="from">От</label>
                 <input id="from" type="text" name="price-range" placeholder="0">
                 <label for="to">До</label>
@@ -55,21 +55,21 @@
                 </p>
             </div>
             <div class="filter-grid">
-            <legend class="grid">Сетка:</legend>
-            <ul>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
-                  <label for="filter-fixed">Фиксированная</label>
-              </li>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
-                  <label for="filter-rubber">Резиновая</label>
-              </li>
-            </ul>
+                <legend class="grid">Сетка:</legend>
+                    <ul>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                          <label for="filter-adaptive">Адаптивная</label>
+                      </li>
+                      <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                          <label for="filter-fixed">Фиксированная</label>
+                      </li>
+                      <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                          <label for="filter-rubber">Резиновая</label>
+                      </li>
+                    </ul>
             </div>
             <div class="filter-features">
             <legend class="features">Особенности:</legend>
@@ -232,42 +232,50 @@
     <footer class="main-footer">
         <section class="map">
             <img src="img/Group%201.jpg" width="" height="">
-            <div class="footer-contacts"> <b>Nёrds design studio</b>
+            <div class="footer-contacts">
+                <b>Nёrds design studio</b>
                 <p>191186, Санкт-Петербург,</p>
                 <p>ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p> <a class="button" href="mail-service">Напишите нам</a> </div>
+                <p>тел. +7 (812) 275-75-75</p>
+                <a class="button" href="mail-service">Напишите нам</a> </div>
         </section>
         <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#">Вконтакте</a></li>
                 <li><a class="social-button" href="#">Фейсбук</a></li>
                 <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul> <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            </ul>
+            <div class="discount">
+            
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
     </footer>
-    <section class="modal modal-mail-service">
+    <fieldset>
+     <section class="modal-mail-service">
       <h2>Напишите нам</h2>
       <form class="mail-service-form" action="https://echo.htmlacademy.ru" method="post">
        <p class="mail-service-item">
-         <label for="mail-service-name">Ваше имя:</label>
-          <input id="mail-service-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="mail-service-item">
-         <label for="e-mail-address">Ваш e-mail:</label> 
-          <input id="e-mail-address" type="text" name="e-mail" value=""placeholder="email@example.com">
-        </p> 
-        <p class="mail-service-item">
-         <label for="mail-text">Текст письма:</label>
-          <input id="mail-text" type="text" name="letter-text" value="" placeholder="В свободной форме">
-        </p> 
+         <label for="name-field">Ваше имя:</label>
+         <br>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+        <br>
+         <label for="e-mail">Ваш e-mail:</label>
+         <br> 
+          <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+         <br>
+        <br>
+         <label for="letter-field">Текст письма:</label>
+         <br>
+          <textarea name="letter" id="letter-field" rows="3" placeholder="В свободной форме"></textarea>
+         <br>
+          </p>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    
-      
-  
-   </body>
+    </fieldset>
+</body>
 
 </html>

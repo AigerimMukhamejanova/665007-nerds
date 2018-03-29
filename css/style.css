@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
   }
 
@@ -83,6 +83,7 @@ li.slider-item a:focus {
 .service-item h3 {
   font-size: 24px;
   line-height: 30px;
+    font-weight: 700;
   text-transform: uppercase;  
 }
 
@@ -165,6 +166,7 @@ li.service-item a.button-yellow:focus {
 
 strong.studio-service {
     text-transform: uppercase;
+    font-weight: 700;
 }
 ul.studio-service li {
    list-style: none;
@@ -177,11 +179,13 @@ table {
 }
 caption {
     text-transform: uppercase;
+    font-weight: 700;
 }
   
 .row-1 {
   font-size: 45px;
   line-height: 10,06px;
+    font-weight: 700;
     
 }
 
@@ -192,6 +196,7 @@ caption {
 
 .row-2 {
   line-height: 18px;
+    font-weight: 400;
 }
 
 .client-logo li {
@@ -202,6 +207,7 @@ caption {
    text-transform: uppercase;
     font-size: 18px;
   line-height: 30px;
+    font-weight: 700;
 }
 
 .footer-contacts .button {
@@ -232,11 +238,15 @@ caption {
 .footer-social b {
   font-size: 36px;
   line-height: 36px;
+    font-weight: 700;
+    text-align: left;
 }
 
 .footer-social p {
    line-height: 22px;
-    
+    font-weight: 400;
+    text-align: left;
+    color: #444444;
 }
 
 .modal-mail-service h2 {
@@ -246,11 +256,12 @@ caption {
 
 .mail-service-form label {
     line-height: 18px;
+    font-weight: 700;
 }
 
 .mail-service-item input, textarea {
   font: inherit;
-
+    font-weight: 400;
   background-color: transparent;
   border: 2px solid #cccccc;
 }
@@ -347,10 +358,12 @@ opacity: 0.5;
 
 .filter legend {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .filter-option {
   list-style: none;
+    font-weight: 400;
 }
 
 .filter-option label {
@@ -360,6 +373,7 @@ opacity: 0.5;
 
 .catalog p.sorting {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .catalog ul {
@@ -416,11 +430,13 @@ opacity: 0.5;
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .catalog-item-hover p {
     font-size: inherit;
     line-height: 18px;
+    font-weight: 400;
 }
 
 .catalog-item-hover a {
@@ -541,7 +557,11 @@ opacity: 0.5;
 }
 
 .slider-item {
-    list-style: none;
+    display: none;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
 }
 
 .service-item p {
@@ -557,7 +577,9 @@ opacity: 0.5;
 .studio-service li {
     list-style: none;
     font-weight: 400;
+    color: #283136;
     line-height: 35px;
+    text-align: left;
 }
 
 .studio-service {
@@ -588,12 +610,12 @@ opacity: 0.5;
 
 
 
-.footer-social p {
+.footer-contacts p {
     font-weight: 400;
 }
 
 
-
+/*
 .skroll {
     width: 224px;
     background: #d7dcde;
@@ -633,8 +655,9 @@ opacity: 0.5;
   background: #00ca74;
   left: 54px;
 }
+*/
 
-legend .grid {
+.filter legend .grid {
     margin-top: 62px;
     margin-bottom: 27px;
 }
@@ -662,6 +685,7 @@ legend .features {
 
 .parameter {
     width: 272px;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
 }
@@ -741,4 +765,55 @@ legend .features {
 .discount {
     width: 545px;
         
+}
+
+.container-1 {
+    width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    
+    background-color: #eeeeee;
+}
+
+.slider-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.filter-price label {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.filter-price input {
+    font: inherit;
+    line-height: 22px;
+    font-weight: 400;
+    width: 80px;
+    height: 38px;
+  background-color: transparent;
+  border: 2px solid #cccccc;
+    text-align: center;
+}
+}
+
+.price-range {
+    width: 260px;
+    height: 38px;
+}
+
+#from {
+    margin-right: 20px;
+}
+
+legend .price {
+    margin-bottom: 56px;
 }
