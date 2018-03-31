@@ -39,23 +39,26 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <div class="filter-price">
-               <legend class="price">Стоимость:</legend>
-                <!--<div class="skroll">
-                    <button class="skroll_left"></button>
-                    <button class="skroll_right"></button>
-                    <div class="skroll_field"></div>
-                </div>-->
-            
-                <p class="price-range">
-                <label for="from">От</label>
-                <input id="from" type="text" name="price-range" placeholder="0">
-                <label for="to">До</label>
-                <input id="to" type="text" name="price-range" placeholder="15000">
-                </p>
-            </div>
+            <fieldset class="filter-item">
+                <div class="filter-price">
+                   <legend>Стоимость:</legend>
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
+                </div>
+            </fieldset>
             <div class="filter-grid">
-                <legend class="grid">Сетка:</legend>
+                <legend>Сетка:</legend>
                     <ul>
                       <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
@@ -72,7 +75,7 @@
                     </ul>
             </div>
             <div class="filter-features">
-            <legend class="features">Особенности:</legend>
+            <legend>Особенности:</legend>
             <ul>
                 <li class="filter-option">
                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -102,8 +105,8 @@
     
     <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
-          <div class="picking"> 
-            <p class="sorting">Сортировать:</p>
+          <div class="sorting"> 
+            <legend>Сортировать:</legend>
                <div class="parambut">
                 <ul class="parameter">
                 <li>
