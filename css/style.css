@@ -417,14 +417,82 @@ opacity: 0.5;
 
 
 
-.filter-option {
+.filter-grid ul {
   list-style: none;
     font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+  margin: 0;
 }
 
 .filter-option label {
-  font-size: inherit;
+  font-size: 16px;
   line-height: 20px;
+    
+    position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+left: -35px;
+  top: -3px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+    top: -3px;
+  left: -35px;
+    
+  width: 30px;
+  height: 25px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+left: -33px;
+  top: -3px;
+    
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+left: -33px;
+  top: -3px;
+    
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .sorting legend {
@@ -470,38 +538,28 @@ opacity: 0.5;
     color: #000000;
 }
 
-
 .pagination-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border: 2px solid #eeeeee;
-  background-color: #eeeeee;
-    padding: 0 0;
+    
+    height: 50px;
+    background-color: #eeeeee;
+    padding: 19px 22px;
 }
 
-
-
-
 .pagination-item a:hover {
-    border: 2px solid #dfdfdf;
     background-color: #dfdfdf;
-    padding: 0 0;
 }
 
 .pagination-item a:focus {
     color: #959595;
-    border: 2px solid #d5d5d5;
     background-color: #d5d5d5;
-    padding: 0 0;
 }
 
 .pagination-item a:active {
-    border: 2px solid #dbdbdb;
+    width: 48px;
+    height: 48px;
+    
     background-color: #ffffff;
-    padding: 0 0;
+    border: 1px solid #dbdbdb;
 }
 
 .catalog-item-hover b {
@@ -835,36 +893,6 @@ legend .features {
     list-style: none;
 }
 
-/*
-.filter-price label {
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-right: 5px;
-}
-
-.filter-price input {
-    font: inherit;
-    line-height: 22px;
-    font-weight: 400;
-    width: 80px;
-    height: 38px;
-  background-color: transparent;
-  border: 2px solid #cccccc;
-    text-align: center;
-}
-
-
-.price-range {
-    width: 260px;
-    height: 38px;
-}
-
-
-
-legend .price {
-    margin-bottom: 56px;
-}
-*/
 
 .slider-controls {
     position: absolute;
@@ -1103,11 +1131,11 @@ legend .price {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: flex-start;
     
+    padding: 0 0;
     width: 443px;
-    margin: 0 0;
-  padding: 0 0;
+    margin-top: 80px;
+    margin-right: 11px;
 }
 
 
@@ -1117,3 +1145,31 @@ legend .price {
 
 
 
+
+.next a {
+    width: 260px;
+    padding-left: 79px;
+    padding-right: 79px;
+}
+
+.filter-features ul {
+    
+  list-style: none;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+  margin: 0;
+}
+
+
+.filter-option {
+    margin-bottom: 25px;
+    padding-left: 35px;
+}
+
+
+
+.down-up-buttons .button-down {
+    margin-left: 48px;
+    margin-right: 18px;
+}
