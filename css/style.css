@@ -191,8 +191,8 @@ strong.studio-service {
     text-transform: uppercase;
     font-weight: 700;
 }
-ul.studio-service li {
-   list-style: none;
+.studio-service ul {
+   padding: 0;
 }
 
 table {
@@ -209,17 +209,17 @@ caption {
   font-size: 45px;
   line-height: 10,06px;
     font-weight: 700;
-    
+    vertical-align: bottom;
+    padding-right: 30px;
 }
 
-.row-1 td {
-    vertical-align: bottom;
-    padding-right: 25px;
-}
+
 
 .row-2 {
   line-height: 18px;
     font-weight: 400;
+    vertical-align: center;
+    
 }
 
 .client-logo li {
@@ -252,8 +252,10 @@ caption {
     display: flex;
     flex-direction: row;
   justify-content: center;
+    align-items: flex-start;
     margin-top: 69px;
     margin-bottom: 70px;
+    
 }
 
 .footer-social ul {
@@ -263,9 +265,9 @@ caption {
     align-items: center;
   list-style: none;
     width: 260px;
-    flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
+    margin: auto;
+    padding: 0;
+  margin-right: 139px;
     
 }
 .social-button {
@@ -294,6 +296,8 @@ caption {
 }
 
 .discount b {
+    width: 560px;
+    height: 35px;
   font-size: 36px;
   line-height: 36px;
     font-weight: 700;
@@ -607,6 +611,15 @@ left: -33px;
 .main-header-logo {
     width: 160px;
   height: 65px;
+    margin-top: 49px;
+}
+
+.main-header-logo:hover {
+    opacity: 0.8;
+}
+
+.main-header-logo:focus {
+    opacity: 0.3;
 }
 
 .site-navigation {
@@ -739,7 +752,21 @@ left: -33px;
     color: #283136;
     line-height: 35px;
     text-align: left;
+     padding-left: 30px;
+  position: relative;
 }
+
+.studio-service li::after {
+    position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  display: block;
+  background: #fb565a;
+  left: 0;
+  top: 15px;
+}
+
 
 .studio-service {
     width: 450px;
@@ -847,7 +874,6 @@ legend .features {
     background-color: #4d4d4d;
     border-radius: 3px;
   border: none;
-    
 }
 
 .catalog-columns {
@@ -861,16 +887,12 @@ legend .features {
     align-items: center;
 }
 
-
-
 .main-footer {
     margin-top: 80px;
 }
 
 .discount {
-    width: 545px;
-    margin-left: 139px;
-    margin-right: 340px;   
+    width: 650px;
 }
 
 .container-1 {
@@ -1092,21 +1114,10 @@ legend .features {
 }
 
 
-
-
-
-.map {
-    display: flex;
-    justify-content: center;
-    
-}
-
 .index-columns3 {
-    content: "";
-    
     position: absolute;
     top: 50px;
-    left: 140px;
+    left: 0;
    z-index: 2;
 }
 
@@ -1124,6 +1135,12 @@ legend .features {
 
 .map-index {
     position: relative;
+    
+    width: 1160px;
+    height: 416px;
+    margin: auto;
+   background-image: url(../img/Group%202.jpg)
+      
 }
 
 .pagination-list {
@@ -1137,14 +1154,6 @@ legend .features {
     margin-top: 80px;
     margin-right: 11px;
 }
-
-
-
-
-
-
-
-
 
 .next a {
     width: 260px;
@@ -1167,9 +1176,52 @@ legend .features {
     padding-left: 35px;
 }
 
-
-
-.down-up-buttons .button-down {
-    margin-left: 48px;
-    margin-right: 18px;
+.down {
+  border: 9px solid transparent;
+  border-bottom: 14px solid #ededed;
+  background-color: transparent;
+    margin-bottom: 11px;
+    margin-left: 18px;
 }
+
+.down:hover {
+    border-bottom: 14px solid #a6a6a6;
+}
+
+.down:focus,
+.down:active {
+    border-bottom: 14px solid #231f20;
+}
+
+.up {
+  border: 9px solid transparent;
+  border-top: 14px solid #ededed;
+  background-color: transparent;
+    margin-left: 48px;
+    margin-top: 11px;
+}
+
+.up:hover {
+    border-top: 14px solid #a6a6a6;
+}
+
+.up:focus,
+.up:active {
+    border-top: 14px solid #231f20;
+}
+
+
+.down-up-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.map-marker {
+  position: absolute;
+    top: 60px;
+    left: 668px;
+   z-index: 2;  
+}
+
+

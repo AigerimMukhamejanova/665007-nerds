@@ -18,7 +18,7 @@
             <ul class="site-navigation">
                 <li><a href="studio.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
-                <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                <li class="site-navigation-current current"><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
@@ -66,7 +66,7 @@
                           <label for="filter-adaptive">Адаптивная</label>
                       </li>
                       <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed" disabled>
                           <label for="filter-fixed">Фиксированная</label>
                       </li>
                       <li class="filter-option">
@@ -124,8 +124,8 @@
                 </li>
             </ul>
                <div class="down-up-buttons">
-                <button class="button button-down"><img src="../img/icon-down-dir.svg"></button>
-                <button class="button button-up"><img src="../img/icon-up-dir.svg"></button>
+                       <a href="#" class="down"></a>
+                       <a href="#" class="up"></a>
                 </div>
                 </div>
             </div> 
@@ -240,10 +240,14 @@
     </main>
     
     <footer class="main-footer">
-        <section class="footer-address">
+       <section class="footer-address">
        <div class="map">
           <div class="map-index">
-           <img src="img/Group%201.jpg" width="" height="">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5795081555386!2d30.32012213954998!3d59.93911932788373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1522716868722" width="1160" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map-marker">
+                <img src="img/map-marker.png">
+            </div>   
+        
                 <div class="index-columns3">
                    <div class="footer-contacts">
                         <b>Nёrds design studio</b>
