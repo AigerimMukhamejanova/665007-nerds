@@ -248,6 +248,14 @@ caption {
   border: none;
 }
 
+.footer-contacts .button:hover {
+    background-color: #e74246;
+}
+
+.footer-contacts .button:focus {
+    background-color: #d7373b;
+}
+
 .footer-social {
     display: flex;
     flex-direction: row;
@@ -386,13 +394,15 @@ caption {
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #000000;
+    opacity: 1;
 }
 
 .filter-input:disabled + label {
-  color: #ced0d0;
-    
-opacity: 0.5;
-}
+    color: #ced0d0;
+    opacity: 0.5;
+ }
+
+
 
 .filter button {
     display: block;
@@ -452,6 +462,7 @@ left: -35px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+    opacity: 0.5;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -467,6 +478,7 @@ left: -35px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+    
 }
 
 .filter-input-radio + label::before {
@@ -482,6 +494,7 @@ left: -33px;
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+    opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::after {
@@ -497,6 +510,22 @@ left: -33px;
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-radio:checked disabled + label::after {
+  content: "";
+
+  position: absolute;
+left: -33px;
+  top: -3px;
+    
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+    opacity: 0.1;
 }
 
 .sorting legend {
@@ -592,6 +621,7 @@ left: -33px;
     background-color: #fb565a; 
     border-radius: 3px;
   border: none;
+    margin: auto;
 }
 
 .catalog-item-hover a:hover {
@@ -843,19 +873,19 @@ legend .features {
     
 }
 
-.catalog-item-hover {
-    text-align: center;
-}
+
 
 
 .flypage {
+    position: relative;
+    
     width: 360px;
     padding-top: 40px;
     background-color: #e9e9e9;
-    position: relative;
+    
     border-radius: 3px;
   border: none;
-    
+  margin-bottom: 33px;  
 }
 
 .flypage::before {
@@ -1225,3 +1255,39 @@ legend .features {
 }
 
 
+
+.active-item-menu {
+     position: relative;
+}
+
+.active-item-menu:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  bottom: -9px;
+  left: 0;
+  background: #fb565a;
+}
+
+
+
+
+
+
+
+.flypage-hover {
+    position: absolute;
+    z-index: 1;
+    bottom: 1px;
+    
+    text-align: center;
+    background-color: #eeeeee;
+    width: 360px;
+    height: 231px;
+    padding-top: 35px;
+}
+
+.flypage:hover .flypage-hover {
+    display: block;
+}
