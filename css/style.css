@@ -1271,11 +1271,6 @@ legend .features {
 }
 
 
-
-
-
-
-
 .flypage-hover {
     position: absolute;
     z-index: 1;
@@ -1290,4 +1285,9 @@ legend .features {
 
 .flypage:hover .flypage-hover {
     display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 416px;
 }
