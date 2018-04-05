@@ -1146,8 +1146,8 @@ legend .features {
 
 .index-columns3 {
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 55px;
+    left: 80px;
    z-index: 2;
 }
 
@@ -1166,10 +1166,9 @@ legend .features {
 .map-index {
     position: relative;
     
-    width: 1160px;
     height: 416px;
     margin: auto;
-   background-image: url(../img/Group%202.jpg)
+   
       
 }
 
@@ -1247,12 +1246,7 @@ legend .features {
   justify-content: flex-start;
 }
 
-.map-marker {
-  position: absolute;
-    top: 60px;
-    left: 668px;
-   z-index: 2;  
-}
+
 
 
 
@@ -1287,7 +1281,17 @@ legend .features {
     display: block;
 }
 
+
+
 iframe {
     width: 100%;
     height: 416px;
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+   background-image: url(../img/Group%201.png);
+       background-repeat: no-repeat;
+    background-position: center;
 }
