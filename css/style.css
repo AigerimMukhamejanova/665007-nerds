@@ -26,7 +26,7 @@ a {
 .user-navigation {
   list-style: none;
   text-transform: uppercase;
-    margin: 0;
+    margin: 10px;
   padding: 0;
 }
 
@@ -50,6 +50,7 @@ a {
     max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
+   text-align: left; 
 }
 
 .slider-item b {
@@ -64,7 +65,7 @@ a {
 .slider-item-button {
     display: block;
     width: 240px;
-    padding: 13px 0;
+    padding: 17px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -95,9 +96,11 @@ a {
 
 .service-item h3 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 20px;
     font-weight: 700;
-  text-transform: uppercase;  
+  text-transform: uppercase; 
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .service-item a {
@@ -112,7 +115,8 @@ li.service-item {
 a.button-red {
     display: block;
     width: 160px;
-    padding: 13px 0;
+    
+    padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -120,7 +124,7 @@ a.button-red {
     text-align: center;
     text-decoration: none;
     border-radius: 3px;
-  border: none;
+  border-top: none;
     background-color: #fb565a; 
     
 }
@@ -139,7 +143,7 @@ a.button-red:active {
 a.button-green {
     display: block;
     width: 160px;
-    padding: 13px 0;
+    padding: 16px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -162,7 +166,7 @@ a.button-green:focus {
 a.button-yellow {
    display: block;
     width: 160px;
-    padding: 13px 0px;
+    padding: 16px 0px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -184,42 +188,54 @@ a.button-yellow:focus {
 
 .studio b {
   font-size: 45px;
-  line-height: 45px;  
+  line-height: 45px;
+    
+   
 }
 
 strong.studio-service {
     text-transform: uppercase;
     font-weight: 700;
+    text-align: left;
+   
 }
 .studio-service ul {
    padding: 0;
 }
 
+ul.client-logo {
+   padding-left: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
 table {
     width: 360px;
     height: 150px;
-    margin-top: 41px;
+    margin-top: 29px;
 }
 caption {
     text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
 }
   
-.row-1 {
+.row-1 td {
   font-size: 45px;
   line-height: 10,06px;
     font-weight: 700;
     vertical-align: bottom;
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 
 
-.row-2 {
+.row-2 td {
   line-height: 18px;
     font-weight: 400;
     vertical-align: center;
-    
+   margin-bottom: 3px;
 }
 
 .client-logo li {
@@ -636,6 +652,7 @@ left: -33px;
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 60px;
+    height: 545px;
 }
 
 .main-header-logo {
@@ -653,10 +670,12 @@ left: -33px;
 }
 
 .site-navigation {
-    width: 434px;
+    width: 438px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 26px;
+    margin-top: 5px;
 }
 
 .user-navigation {
@@ -671,7 +690,7 @@ left: -33px;
 .container {
     width: 1160px;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 0;
 }
 
 .main-navigation-wrapper .container {
@@ -683,8 +702,11 @@ left: -33px;
 .service-list {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
     margin: 0;
-  padding: 0;
+  padding-top: 20px;
+    margin-right: 60px;
 }
 
 .services {
@@ -693,12 +715,12 @@ left: -33px;
 
 .studio {
     width: 660px;
-    padding-top: 80px;
+    padding-top: 75px;
 }
 
 .chart {
     width: 360px;
-    padding-top: 42px;
+    padding-top: 41px;
 }
 
 
@@ -706,7 +728,7 @@ left: -33px;
 .index-columns2 {
     display: flex;
     justify-content: space-between;
-    
+    border-top: 2px solid #eeeeee;
 }
 
 .visually-hidden {
@@ -715,7 +737,7 @@ left: -33px;
 
 .slider-item {
     display: none;
-    padding: 78px 0 80px 0;
+    padding: 77px 0 80px 0;
 }
 
 
@@ -768,13 +790,20 @@ left: -33px;
 
 .service-item p {
     font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 31px;
+}
+
+.green p {
+    padding-left: 2px;
 }
 
 .studio p {
     font-weight: 400;
-    margin-top: 37px;
-    width: 660px;
-    height: 65px;
+    margin-top: 32px;
+    width: 650px;
+    height: 40px;
 }
 .studio-service li {
     list-style: none;
@@ -782,7 +811,9 @@ left: -33px;
     color: #283136;
     line-height: 35px;
     text-align: left;
-     padding-left: 30px;
+     padding-left: 37px;
+    padding-top: 3px;
+    padding-bottom: 10px;
   position: relative;
 }
 
@@ -794,13 +825,14 @@ left: -33px;
   display: block;
   background: #fb565a;
   left: 0;
-  top: 15px;
+  top: 19px;
 }
 
 
 .studio-service {
     width: 450px;
     height: 160px;
+    margin-top: 47px;
     
 }
 
@@ -810,6 +842,7 @@ left: -33px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 53px;
 }
 
 .client-logo li {
@@ -823,6 +856,7 @@ left: -33px;
 
 .footer-contacts p {
     font-weight: 400;
+    
 }
 
 
@@ -927,6 +961,7 @@ legend .features {
 
 .container-1 {
     width: 1200px;
+    height: 430px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -1115,6 +1150,7 @@ legend .features {
 .user-navigation .login-link {
     padding-left: 50px;
     position: relative;
+    margin-left: 5px;
 }
 
 .login-link::before {
@@ -1132,7 +1168,8 @@ legend .features {
 }
 
 .client-logo a {
-   opacity: 0.2; 
+   opacity: 0.2;
+    
 }
 
 .client-logo a:hover {
@@ -1146,8 +1183,8 @@ legend .features {
 
 .index-columns3 {
     position: absolute;
-    top: 55px;
-    left: 80px;
+    top: 52px;
+    left: 83px;
    z-index: 2;
 }
 
@@ -1156,7 +1193,7 @@ legend .features {
     flex-direction: column;
     justify-content: center;
     
-    padding-top: 54px;
+    padding-top: 50px;
     padding-bottom: 47px;
     padding-left: 50px;
     padding-right: 50px;
@@ -1294,4 +1331,20 @@ iframe {
    background-image: url(../img/Group%201.png);
        background-repeat: no-repeat;
     background-position: center;
+}
+
+.logo-1 {
+    margin-top: 15px;
+}
+
+.logo-4 {
+    margin-top: 10px;
+}
+
+.logo-2 {
+    margin-top: 5px;
+}
+
+.logo-3 {
+    margin-top: 5px;
 }
