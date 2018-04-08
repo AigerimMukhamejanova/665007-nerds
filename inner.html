@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
            <div class="main-navigation-wrapper">
@@ -37,7 +37,7 @@
         
     <div class="catalog-columns"> 
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр шаблонов</h2>
+            
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
                 <div class="filter-price">
@@ -108,7 +108,7 @@
     </section>
     
     <section class="catalog">
-            <h2 class="visually-hidden">Список шаблонов</h2>
+            
           <div class="sorting"> 
             <legend>Сортировать:</legend>
                <div class="parambut">
@@ -295,30 +295,33 @@
             </div>
         </div>
     </footer>
-    <fieldset>
-     <section class="modal-mail-service">
-      <h2>Напишите нам</h2>
+    
+     <section class="modal modal-mail-service">
+         
+          <h2>Напишите нам</h2>
       <form class="mail-service-form" action="https://echo.htmlacademy.ru" method="post">
-       <p class="mail-service-item">
+        <div class="mail-service-item">
          <label for="name-field">Ваше имя:</label>
+         <label for="e-mail">Ваш e-mail:</label>
          <br>
           <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
-        <br>
-         <label for="e-mail">Ваш e-mail:</label>
-         <br> 
-          <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+        
+         <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+         
          <br>
-        <br>
          <label for="letter-field">Текст письма:</label>
          <br>
           <textarea name="letter" id="letter-field" rows="3" placeholder="В свободной форме"></textarea>
-         <br>
-          </p>
+         
+          </div>
         <button class="button" type="submit">Отправить</button>
       </form>
+      
+      
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    </fieldset>
+    
+    
 </body>
 
 </html>
