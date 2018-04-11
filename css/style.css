@@ -374,6 +374,7 @@ caption {
 .mail-service-item textarea {
     width: 760px;
     height: 118px;
+    resize: vertical;
 }
 
 .mail-service-item input:hover {
